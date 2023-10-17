@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Fotos Recetas</title>
+</head>
+<body>
+    <a href="/index.html">Inicio</a>
+    <a href="foto.html">Volver</a>
+    <div class='container'>
+        <div class="row">
+            <table class='table table-striped'>
+                <thead class='table-dark'>
+                    <tr>
+                        <th class='text-center' scope='col'>ID</th>
+                        <th class='text-center' scope='col'>Nombre foto</th>
+                    </tr>
+                </thead>
+                <tbody id="listado">
+                    
+                    <tr key={foto.id_foto}>
+                        <td class='text-center text-white'>{foto.id_foto}</td>
+                        <td class='text-center text-white'>{foto.nombre_foto}</td>
+                        <td class='text-center text-white'><img [src]={{foto.url_imagen}} alt="Foto de receta"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../js/listado-foto.js"></script>
+</html>

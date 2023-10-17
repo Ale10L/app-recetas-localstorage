@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Foto</title>
+</head>
+
+<body>
+  <a href="/index.html">Inicio</a>
+  <a href="foto-listado.html">Listado de fotos</a>
+  <label id="idFoto">{foto.id_foto}</label>
+  <div class="row">
+    <form class='form'>
+      <div class='form_group'>
+        <input type="text" class='nombre_foto' name='nombre_foto' required />
+        <label class='label'>Nombre de la foto</label>
+        <br />
+      </div>
+      <div class='form_group'>
+        <label class='label'>Selecciona la receta</label>
+        <select type="select" class='id_receta' name='id_receta' required>
+          <option></option>
+        </select>
+
+        <br />
+      </div>
+      <div class='form_group'>
+        <input type="text" class='url_imagen' name='url_imagen' required />
+        <label class='label'>URL de la foto</label>
+        <br />
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button class="btn btn-primary" id='btnAceptar'>
+          Agregar
+        </button>
+        <button class="btn btn-danger">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="../js/foto.js"></script>
+
+</html>

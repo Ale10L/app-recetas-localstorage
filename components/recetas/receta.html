@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar receta</title>
+</head>
+
+<body>
+    <a href="/index.html">Inicio</a>
+    <a href="receta-listado.html">Listado de recetas</a>
+    <label id="idReceta">{receta.id_receta}</label>
+    <div class="row">
+        <form class='form'>
+            <div class='form_group'>
+                <input type="text" class='nombre_receta' name='nombre_receta' required />
+                <label class='label'>Nombre de la receta</label>
+                <br />
+            </div>
+            <!-- <div class='form_group'>
+            <input type="text" class='url_imagen' name='url_imagen' required />
+            <label class='label'>URL de la receta</label>
+            <br />
+          </div> -->
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button class="btn btn-primary" id='btnAceptar'>
+                    Agregar
+                </button>
+                <button class="btn btn-danger">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <iframe src="../fotos/html/foto.html" ></iframe>
+    </div>
+</body>
+<script src="../recetas/receta.js"></script>
+
+</html>
